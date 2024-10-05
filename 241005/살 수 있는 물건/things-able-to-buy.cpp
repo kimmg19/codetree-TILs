@@ -6,9 +6,8 @@ int main() {
     cin>>money;
     if(money>=3000){
         cout<<"book";
-        return 0;
-    }else if(money>0){
+    }else if(money>0&&money<3000){
         cout<<"mask";
-    }else if(money==0) cout<<"no";
+    }else cout<<"no";
     return 0;
 }
