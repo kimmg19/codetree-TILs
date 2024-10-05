@@ -7,7 +7,7 @@ int main() {
     if(money>=3000){
         cout<<"book";
     }else if(money>=1000&&money<3000){
-        cout<<"mask"
+        cout<<"mask";
     }else if(money>=500&&money<1000)
         cout<<"pen";
     else cout<<"no";
