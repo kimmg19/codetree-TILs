@@ -5,7 +5,7 @@ int main() {
     int n;
     cin>>n;
     while(n>0){
-        cout<<"8"<<"\n";
+        cout<<"*"<<"\n";
         n--;
     }
     return 0;
