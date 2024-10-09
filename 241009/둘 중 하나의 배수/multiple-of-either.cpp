@@ -3,7 +3,8 @@ using namespace std;
 
 int main() {
     int a;
-    if(a%3==0||a%5==0)cout<<"1";
-    else cout<<"0";
+    cin>>a;
+    cout<<(a%3==0||a%5==0);
+   
     return 0;
 }
