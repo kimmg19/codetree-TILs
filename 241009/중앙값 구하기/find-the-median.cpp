@@ -12,8 +12,8 @@ int main() {
         
     }else{
         if(b>c)cout<<c;
-        else if(a>b)cout<<b;
-        else cout<<a;
+        else if(a>b)cout<<a;
+        else cout<<b;
     }
         
         
