@@ -3,6 +3,6 @@ using namespace std;
 
 int main() {
     int a;
-    cout<<(a%3==0||a%5==0);
+    cout<<(a%3||a%5);
     return 0;
 }
