@@ -9,7 +9,7 @@ int main() {
     for(int i=0;i<N;i++){
         cin>>arr[i];
     }
-    for(int i=0;i<M;i++){
+    for(int i=0;i<N;i++){
         if((arr[i]%2==1)&&(arr[i]%3==0))cout<<arr[i]<<"\n";
     }
     return 0;
