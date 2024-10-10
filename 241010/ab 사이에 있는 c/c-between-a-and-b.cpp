@@ -9,7 +9,8 @@ int main() {
             cout<<"YES";
             return 0;
         }
-        cout<<"NO";
+        
     }
+    cout<<"NO";
     return 0;
 }
