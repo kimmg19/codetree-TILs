@@ -5,10 +5,14 @@ int main() {
     int age;
     int sum=0;
     int cnt=0;
-    cin>>age;
-    while(age>=20&&age<=29){
+    while(1){
+        cin>>age;        
+    if (!(age>=20&&age<=29))
+        break;
+    else {
         cnt++;
         sum+=age;
+    } 
     }
     cout<<fixed;
     cout.precision(2);
