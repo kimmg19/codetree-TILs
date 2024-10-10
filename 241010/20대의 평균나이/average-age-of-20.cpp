@@ -16,6 +16,6 @@ int main() {
     }
     cout<<fixed;
     cout.precision(2);
-    cout<<(double)sum/age;
+    cout<<(double)sum/cnt;
     return 0;
 }
