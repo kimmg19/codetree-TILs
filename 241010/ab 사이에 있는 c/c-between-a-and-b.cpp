@@ -7,7 +7,7 @@ int main() {
     for(int i=a;i<=b;i++){
         if(i%c==0){
             cout<<"YES";
-            return;
+            return 0;
         }
         cout<<"NO";
     }
