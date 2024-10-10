@@ -10,5 +10,6 @@ int main() {
         else n*2+2;
         cnt++;
     }
+    cout<<cnt;
     return 0;
 }
