@@ -7,7 +7,9 @@ int main() {
         cin>>arr[i];
     }
     for(int j=0;j<10;j++){
-        if(arr[j]%3==0)cout<<arr[j-1];
+        if(arr[j]%3==0){cout<<arr[j-1];
+        return 0;
+    }
     }
     return 0;
 }
