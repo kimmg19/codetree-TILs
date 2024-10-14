@@ -6,8 +6,9 @@ int main() {
     char cnt='A';
     for(int i=0;i<n;i++){
         for(int j=i;j<n;j++){
-            cout<<cnt++;
+            cout<<(char)cnt++;
         }
+        cout<<"\n";
     }
     return 0;
 }
