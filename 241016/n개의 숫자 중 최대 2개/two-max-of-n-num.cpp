@@ -22,5 +22,5 @@ int main() {
         }else if(arr[j]>=max2)
             max2=arr[j];
     }
-   
+    cout<<max1<<" "<<max2;   
 }
