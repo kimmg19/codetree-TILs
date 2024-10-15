@@ -1,22 +1,26 @@
 #include <iostream>
-#include <algorithm>
-#include <utility>
 
 using namespace std;
 
 int main() {
-    // 변수 선언: 
-    int A[100], n;
-
-    // 입력:
-    cin >> n;
-    for (int i = 0; i < n; i++)
-        cin >> A[i];
-        
-    // 내림차순으로 정렬합니다.
-    sort(A, A+n, greater<int>()); 
-    
-    // 출력:
-    cout << A[0] << " " << A[1];
-    return 0;
+   int n,max1,max2;
+   cin>>n;
+   int arr[n];
+   for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    if(arr[0]>=arr[1]){
+        max1=arr[0];
+        max2=arr[1];
+    }else 
+        max1=arr[1];
+        max2=arr[0];
+    for(int j=2;j<n;j++){
+        if(arr[j]>=max1){
+            max2=max1;
+            max1=arr[j];
+        }else if(arr[j]>=max2)
+            max2=arr[j];
+    }
+   
 }
