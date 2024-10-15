@@ -19,21 +19,23 @@ int main() {
             continue;
         }else if(num==2){
             cin>>question[0];  
+            bool isfind=false;
             for(int k=0;k<n;k++){
                 if(arr[k]==question[0]){
                     cout<<k+1<<" ";
-                    break;
-                }
-                continue;
+                    isfind=true;
+                    break;      //배열탐색 중지
+                }                       
             }
-            cout<<"0";
+            if(!isfind)cout<<"0";
+            
             cout<<"\n";
-            continue;
+            continue;       //다음질문
         }else{
             cin>>question[0];
             cin>>question[1];
             for(int i=question[0];i<=question[1];i++){
-                cout<<arr[i]<<" ";
+                cout<<arr[i-1]<<" ";
             }
             cout<<"\n";
             continue;
