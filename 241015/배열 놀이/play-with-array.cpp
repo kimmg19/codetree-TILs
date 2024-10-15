@@ -26,13 +26,14 @@ int main() {
                 }
                 continue;
             }
+            cout<<"0";
             cout<<"\n";
             continue;
         }else{
             cin>>question[0];
             cin>>question[1];
             for(int i=question[0];i<=question[1];i++){
-                cout<<arr[i-1]<<" ";
+                cout<<arr[i]<<" ";
             }
             cout<<"\n";
             continue;
