@@ -8,7 +8,7 @@ int main() {
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    for(int j=0;j<n;j++){
+    for(int j=0;j<n-1;j++){
         int result=arr[j+1]-arr[j];
         if(result<=min)min=result;
         else continue;
