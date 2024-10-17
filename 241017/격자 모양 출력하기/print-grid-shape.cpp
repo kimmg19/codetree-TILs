@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     int n,m,row,col;
     cin>>n>>m;
-    int arr[n][n];
+    int arr[n][n]={};
     for(int i=0;i<m;i++){
         cin>>col>>row;
         arr[col-1][row-1]=col*row;
