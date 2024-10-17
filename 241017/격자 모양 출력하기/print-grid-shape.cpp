@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int n,m.row,col;
+    int n,m,row,col;
     cin>>n>>m;
     int arr[n][n];
     for(int i=0;i<m;i++){
