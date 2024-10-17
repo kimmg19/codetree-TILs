@@ -7,7 +7,7 @@ int main() {
     int arr[n][n]={};
     
         for(int i=n-1;i>=0;i--){
-        if(n-1-i%2==1){
+        if((n-1-i)%2==0){
             for(int j=n-1;j>=0;j--)
                 arr[j][i]=cnt++;
         }else{
