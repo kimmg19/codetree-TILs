@@ -11,7 +11,7 @@ int main() {
 
     if(size1>=size2){
         if(size1>=size3){
-            if(size2>=size3)cout<<size1-size2;
+            if(size2>=size3)cout<<size1-size3;
             else cout<<size1-size2;
         }else cout<<size3-size2;
 
