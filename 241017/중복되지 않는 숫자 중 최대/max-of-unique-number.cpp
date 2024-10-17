@@ -18,6 +18,6 @@ int main() {
         }
         
     }
-    cout<<max+1;
+    cout<<max;
     return 0;
 }
