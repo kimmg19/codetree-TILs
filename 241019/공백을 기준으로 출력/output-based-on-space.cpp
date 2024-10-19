@@ -10,7 +10,7 @@ int main() {
         if(str1[i]==' ')continue;
         cout<<str1[i];
     }
-    cout<<"\n";
+    
     for(int i=0;i<str2.length();i++){
         if(str2[i]==' ')continue;
 
