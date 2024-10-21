@@ -8,6 +8,7 @@ int main() {
     string str;
     string str2;
     cin>>str>>str2;
-    cout<<str.find(str2);
+    if(str.find(str2)!=std::npos)cout<<str.find(str2);
+    else cout<<-1;
     return 0;
 }
