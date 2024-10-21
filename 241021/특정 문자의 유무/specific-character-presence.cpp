@@ -6,7 +6,7 @@ int main() {
     string str;
     cin>>str;
     bool isFind=false;
-    if(str.find("ee")==true)cout<<"Yes"<<" ";
+    if(str.find("ee")!=string::npos)cout<<"Yes"<<" ";
     else cout<<"No"<<" ";
     for(int i=0;i<str.length()-1;i++){
         if(str.substr(i,2)=="ab"){
