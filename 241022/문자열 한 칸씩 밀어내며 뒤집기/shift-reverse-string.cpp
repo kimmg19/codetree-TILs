@@ -11,6 +11,10 @@ int main() {
     int q;
     for(int i=0;i<num;i++){
         cin>>q;
+        if(length==1){
+            cout<<str<<endl;
+            continue;
+        }
         if(q==1){
             str=str.substr(1,length-1)+str.substr(0,1);
             
