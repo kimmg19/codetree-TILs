@@ -25,8 +25,9 @@ int main() {
         }else{
             for(int i=1;i<=length;i++)
                 str2+=str.substr(length-i,1)     ;                 
-str=str2;
+                str=str2;
         }
+        str2="";
     cout<<str<<endl; 
     }
     return 0;
