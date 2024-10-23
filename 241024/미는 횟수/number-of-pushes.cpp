@@ -10,13 +10,14 @@ int main() {
     cin>>A>>B;
     for(int i=0;i<A.length()-1;i++){
         A=A.substr(1,A.length()-1)+A.substr(0,1);
-        
+        n++;
         if(A==B){
-            if(n==0)cout<<++n;
-            else cout<<n;
+            cout<<n;
             return 0;
-            }
-        else n++;
+        }else {
+            continue;
+        }
+        
     }
         cout<<-1;
     
