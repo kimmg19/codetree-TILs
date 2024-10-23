@@ -13,7 +13,7 @@ int main() {
         
         if(A==B){
             if(n==0)cout<<++n;
-            cout<<n;
+            else cout<<n;
             return 0;
             }
         else n++;
