@@ -9,7 +9,8 @@ int main() {
     int n=0;
     cin>>A>>B;
     for(int i=0;i<A.length()-1;i++){
-        A=A.substr(1,A.length()-1)+A.substr(0,1);
+        A=A.substr(A.length()-1,1)+A.substr(0,A.length()-1);
+        
         n++;
         if(A==B){
             cout<<n;
