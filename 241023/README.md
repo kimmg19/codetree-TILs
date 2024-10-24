@@ -4,11 +4,11 @@
 24년 10월 23일 목표(140px)를 달성했어요🥳.
 
 ![160xp](https://img.shields.io/badge/EXP-160xp-%235cb85c.svg?for-the-badge)
-![5일째](https://img.shields.io/badge/연속학습-5일째-%23E34F26.svg?for-the-badge)
+![0일째](https://img.shields.io/badge/연속학습-0일째-%23E34F26.svg?for-the-badge)
 
 |총 문제수|획득 경험치|연속 학습|
 |---:|---:|---|
-17|160xp|5일째🔥|
+17|160xp|0일째❄️|
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
@@ -28,7 +28,7 @@
 |[Novice Low / 문자열 / 문자열 비교](https://www.codetree.ai/missions?missionId=4)|[[개념]일치하는 문자열의 수](https://www.codetree.ai/missions/4/problems/num-of-correct-string)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/kimmg19/codetree-TILs/blob/main/241023/%EC%9D%BC%EC%B9%98%ED%95%98%EB%8A%94%20%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98%20%EC%88%98/num-of-correct-string.cpp)|
 |[Novice Low / 문자열 / 문자열 비교](https://www.codetree.ai/missions?missionId=4)|[[연습]문자열 거꾸로 출력하기](https://www.codetree.ai/missions/4/problems/print-string-backward)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/kimmg19/codetree-TILs/blob/main/241023/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EA%B1%B0%EA%BE%B8%EB%A1%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/print-string-backward.cpp)|
 |[Novice Low / 문자열 / 문자열 비교](https://www.codetree.ai/missions?missionId=4)|[[연습]문자열의 개수](https://www.codetree.ai/missions/4/problems/number-of-spring)|![보통][medium]|![Passed][passed]|[링크](https://github.com/kimmg19/codetree-TILs/blob/main/241023/%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98%20%EA%B0%9C%EC%88%98/number-of-spring.cpp)|
-|[Novice Low / 문자열 / 문자열 비교](https://www.codetree.ai/missions?missionId=4)|[[테스트]미는 횟수](https://www.codetree.ai/missions/4/problems/number-of-pushes)|![쉬움][easy]|![Failed][failed]|[링크](https://github.com/kimmg19/codetree-TILs/blob/main/241023/%EB%AF%B8%EB%8A%94%20%ED%9A%9F%EC%88%98/number-of-pushes.cpp)|
+|[Novice Low / 문자열 / 문자열 비교](https://www.codetree.ai/missions?missionId=4)|[[테스트]미는 횟수](https://www.codetree.ai/missions/4/problems/number-of-pushes)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/kimmg19/codetree-TILs/blob/main/241023/%EB%AF%B8%EB%8A%94%20%ED%9A%9F%EC%88%98/number-of-pushes.cpp)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
