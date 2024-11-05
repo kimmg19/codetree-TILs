@@ -8,11 +8,11 @@ bool MonthDay(int n,int m){
             if(m<=28)return true;
             else return false;
         }else{
-            if(m<=30)return true;
+            if(m<=31)return true;
             else return false;
         }
     }else if(n<=12 && n%2==1){
-        if(m<=31) return true;
+        if(m<=30) return true;
         else return false;
     }else return false;
 }
