@@ -8,8 +8,7 @@ bool Continuous(int arr1[],int arr2[],int n1,int n2){
             for(int j=0;j<n2;j++){
                 if(arr1[i+j]==arr2[j])isConti=true;
                 else isConti=false;
-            }
-            return true;
+            }            
         }
         else isConti=false;
     }
