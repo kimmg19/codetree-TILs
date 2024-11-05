@@ -6,6 +6,7 @@ bool MonthDay(int n,int m){
     if(n<=12 && n%2==0){
         if(n==2){
             if(m<=28)return true;
+            else return false;
         }else{
             if(m<=30)return true;
             else return false;
