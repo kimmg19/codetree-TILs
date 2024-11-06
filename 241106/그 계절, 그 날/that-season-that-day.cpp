@@ -10,7 +10,6 @@ bool isYoon(int year){
     return true;
 }
 int CheckWeather(int year,int month, int day){
-    if(year>3000 || month>12 || day >31|| year<1 || month<1 || day<1) return -1;
     if(isYoon(year)){
         if(month==2){
             if(day<=29)return month;
