@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#define MAX 50
+#define MAX 100
 
 int sum=0;
 void DMP(int *arr,int m){
