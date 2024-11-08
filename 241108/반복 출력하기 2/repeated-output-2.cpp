@@ -6,7 +6,7 @@ void HelloWorlld(int n){
         return;
     }
     cout<<"HelloWorld"<<endl;
-    HelloWorld(n-1);
+    HelloWorlld(n-1);
 }
 
 int main() {
