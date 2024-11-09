@@ -12,7 +12,7 @@ void Fnc2(int n){
     if(n<1)return;
     
     cout<<n<<" ";
-    Fnc1(n-1);
+    Fnc2(n-1);
     return;
 }
 
@@ -20,7 +20,9 @@ void Fnc2(int n){
 int main() {
     // 여기에 코드를 작성해주세요
     int n;
+    cin>>n;
     Fnc1(n);
+    cout<<endl;
     Fnc2(n);
     return 0;
 }
