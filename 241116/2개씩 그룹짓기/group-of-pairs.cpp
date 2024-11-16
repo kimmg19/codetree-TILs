@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-#define MAX 1000
+#define MAX 2000
 int arr[MAX];
 int n; 
 
