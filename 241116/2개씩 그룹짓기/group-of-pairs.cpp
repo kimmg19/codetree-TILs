@@ -7,7 +7,7 @@ int arr[MAX];
 int n; 
 
 int Fnc(int i){
-    return arr[i]+arr[n*2-i];
+    return arr[i]+arr[n*2-1-i];
 }
 
 int main() {
