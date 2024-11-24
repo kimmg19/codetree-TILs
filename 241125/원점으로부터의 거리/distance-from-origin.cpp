@@ -17,6 +17,8 @@ class Point{
 };
 
 bool compare(const Point &p1,const Point &p2){
+    if(p1.v1+p1.v2==p2.v1+p2.v2;)
+        return p1.n<p2.n;
     return p1.v1+p1.v2<p2.v1+p2.v2;
 
 }
