@@ -17,7 +17,7 @@ class Student{
         this->name=name;
         this->kor=kor;
         this->eng=eng;
-        this->main=math;
+        this->math=math;
     }
 };
 
