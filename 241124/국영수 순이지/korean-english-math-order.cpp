@@ -22,8 +22,8 @@ class Student{
 };
 
 bool compare(const Student &s1,const Student &s2){
-    if(s1.kor==s1.kor){
-        if(s1.eng==s1>eng) return s1.main>s2.math;
+    if(s1.kor==s2.kor){
+        if(s1.eng==s2.eng) return s1.math>s2.math;
         else return s1.eng>s2.eng;
     }
     return s1.kor>s2.kor;
