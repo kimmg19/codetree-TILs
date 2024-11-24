@@ -19,7 +19,7 @@ class Point{
 bool compare(const Point &p1,const Point &p2){
     if(abs(p1.v1)+abs(p1.v2)==abs(p2.v1)+abs(p2.v2))
         return p1.n<p2.n;
-    return abs(p1.v1)+abs(p1.v2)==abs(p2.v1)+abs(p2.v2);
+    return abs(p1.v1)+abs(p1.v2)<abs(p2.v1)+abs(p2.v2);
 
 }
 int main() {
@@ -35,6 +35,7 @@ int main() {
     sort(point,point+n,compare);
     for(int i=0;i<n;i++){
         cout<<point[i].n<<endl;
+        
     }
     return 0;
 }
