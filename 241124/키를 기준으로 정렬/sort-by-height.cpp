@@ -33,7 +33,7 @@ int main() {
         cin>>name>>height>>weight;
         personData[i]=PersonData(name,height,weight);
     }
-    sort(personData,personData+5,compare);
+    sort(personData,personData+n,compare);
     for(int i=0;i<n;i++){
         cout<<personData[i].name<<" "<<personData[i].height<<" "<<personData[i].weight<<endl;
     }
