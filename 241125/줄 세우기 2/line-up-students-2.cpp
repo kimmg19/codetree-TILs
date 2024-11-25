@@ -14,14 +14,14 @@ int main() {
     for(int i=0;i<n;i++){
         int h,w;
         cin>>h>>w;
-        students[i]=make_tuple(h,w,i+1);
+        students[i]=make_tuple(h,-w,i+1);
     }
     sort(students,students+n);
 
     for(int i=0;i<n;i++){
         int height,weight,index;
         tie(height,weight,index)=students[i];
-        cout<<height<<" "<<weight<<" "<<index<<endl;
+        cout<<height<<" "<<-weight<<" "<<index<<endl;
     }
     return 0;
 }
