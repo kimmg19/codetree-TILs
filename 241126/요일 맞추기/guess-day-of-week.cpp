@@ -18,10 +18,17 @@ int main() {
     // 여기에 코드를 작성해주세요.
     int m1,d1,m2,d2;
     cin>>m1>>d1>>m2>>d2;
-    string day[7]={"Mon","Tue","Wed","Thu","Fri""Sat","Sun"};
+    string day[7]={"Mon","Tue","Wed","Thu","Fri","Sat","Sun"};
 
     int dayOfM1=Fnc(m1,d1);
     int dayOfM2=Fnc(m2,d2);
-    cout<<day[(dayOfM2-dayOfM1)%7];    
+    int Dif=dayOfM2-dayOfM1;
+    if(Dif>0){
+        cout<<day[Dif];
+    }  else{
+        cout<<day[7+Dif];
+    }
+
+     
     return 0;
 }
