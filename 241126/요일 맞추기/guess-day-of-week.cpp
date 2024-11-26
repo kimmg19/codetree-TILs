@@ -22,7 +22,7 @@ int main() {
 
     int dayOfM1=Fnc(m1,d1);
     int dayOfM2=Fnc(m2,d2);
-    int Dif=dayOfM2-dayOfM1;
+    int Dif=(dayOfM2-dayOfM1)%7;
     if(Dif>=0){
         cout<<day[Dif];
     }  else{
