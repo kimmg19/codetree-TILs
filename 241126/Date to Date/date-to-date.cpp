@@ -18,6 +18,7 @@ int main() {
         if(i==m2)day_of_month2+=d2;
         day_of_month2+=arr[i];
     }  
-    cout<<day_of_month2-day_of_month1;
+    if(day_of_month1==day_of_month2)cout<<1;
+    else cout<<day_of_month2-day_of_month1;
     return 0;
 }
