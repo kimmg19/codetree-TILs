@@ -17,7 +17,7 @@ int Fnc(int m,int d){
 }
 
 int Fnc2(string str){
-    for(int i=0;i<8;i++){
+    for(int i=1;i<8;i++){
         if(day_of_week[i]==str)
         return i;
     }
@@ -33,7 +33,9 @@ int main() {
     int m2_day=Fnc(m2,d2);
     int dayDif=m2_day-m1_day;
     int addDay=Fnc2(str);
-    cout<<(dayDif+addDay)/7;
+    if(dayDif%7>=addDay)
+        cout<<dayDif/7+1;
+    else cout<<dayDif/7;
 
     return 0;
 }
