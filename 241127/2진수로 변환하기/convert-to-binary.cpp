@@ -8,7 +8,10 @@ int main() {
     int arr[20]={};
     int cnt=0;
     while(true){
-        if(n==0)break;
+        if(n<2){
+            arr[cnt]=n;
+            break;
+        }
         arr[cnt]=n%2;
         n/=2;
         cnt++;
