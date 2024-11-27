@@ -9,7 +9,7 @@ int main() {
     int cnt=0;
     while(true){
         if(n<2){
-            arr[cnt]=n;
+            arr[cnt++]=n;
             break;
         }
         arr[cnt]=n%2;
