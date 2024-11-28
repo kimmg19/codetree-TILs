@@ -11,15 +11,16 @@ int main() {
         num=num*a+n[i]-'0';
     }
     int arr[20]={};
+    int cnt=0;
     while(true){
         if(num<b){
             arr[cnt++]=num;
             break;
         }
         arr[cnt++]=num%b;
-        cnt/=b;
+        num/=b;
     }
-    for(int i=cnt=1;i>=0;i--){
+    for(int i=cnt-1;i>=0;i--){
         cout<<arr[i];
     }
     return 0;
