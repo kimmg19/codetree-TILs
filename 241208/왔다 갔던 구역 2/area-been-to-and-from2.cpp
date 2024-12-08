@@ -12,7 +12,7 @@ void Fnc(int x,char r){
     else
     {
         for(int i=0;i<x;i++){                
-            arr[pnt--]++;
+            arr[--pnt]++;
         }
     }    
 }
@@ -27,8 +27,11 @@ int main() {
         Fnc(x,r);
     }
     int cnt=0;
-    for(int i=0;i<=2000;i++){
-        if(arr[i]>=2)cnt++;
+    for(int i=0;i<2000;i++){
+        if(arr[i]>=2){
+            cnt++;
+            // cout<<i-1000<<","<<arr[i]<<" ";
+        }
     
     }
     cout<<cnt;
