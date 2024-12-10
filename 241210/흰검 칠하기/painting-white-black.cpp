@@ -28,8 +28,7 @@ void Fnc(Arr * arr,int x,char r){
             arr[pnt].white_cnt++;
             if(i!=x-1)pnt--;
         }
-    }
-    
+    }    
 }
 
 int main() {
@@ -40,9 +39,9 @@ int main() {
 
     int n;
     cin>>n;
-    Arr arr[100000];
+    Arr arr[100001];
    
-    for(int i=0;i<100000;i++)
+    for(int i=0;i<100001;i++)
         arr[i]=Arr();
     for(int i=0;i<n;i++){
         int x;
