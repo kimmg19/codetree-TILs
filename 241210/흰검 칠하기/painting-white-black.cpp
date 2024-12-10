@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int pnt=50000;
+int pnt=100000;
 class Arr{
     public:
     int r;
@@ -39,9 +39,9 @@ int main() {
 
     int n;
     cin>>n;
-    Arr arr[100000];
+    Arr arr[200000];
    
-    for(int i=0;i<100000;i++)
+    for(int i=0;i<200000;i++)
         arr[i]=Arr();
     for(int i=0;i<n;i++){
         int x;
@@ -49,7 +49,7 @@ int main() {
         cin>>x>>r;
         Fnc(arr,x,r);
     }
-    for(int i=0;i<100000;i++){
+    for(int i=0;i<200000;i++){
         if(arr[i].black_cnt>=2 && arr[i].white_cnt>=2){
             grayCnt++;
             continue;
