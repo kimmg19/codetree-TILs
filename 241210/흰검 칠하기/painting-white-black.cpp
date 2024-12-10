@@ -39,9 +39,9 @@ int main() {
 
     int n;
     cin>>n;
-    Arr arr[100001];
+    Arr arr[100000];
    
-    for(int i=0;i<100001;i++)
+    for(int i=0;i<100000;i++)
         arr[i]=Arr();
     for(int i=0;i<n;i++){
         int x;
