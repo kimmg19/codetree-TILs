@@ -24,19 +24,21 @@ int main() {
         }
     }
     int a1=0,b1=0,a2=0,b2=0;
+
     for(int i=x1[0];i<=x2[0];i++){
         for(int j=y1[0];j<=y2[0];j++){
-            if(arr[i][j]==0 && a1==0 && b1==0){
+            if(arr[i][j]==1 && a1==0 && b1==0){
                 a1=i;
                 b1=j;
             }
-            else if(arr[i][j]==0){
+            else if(arr[i][j]==1){
                 a2=i;
                 b2=j;
             }
         }
     }
     cout<<(a2-a1)*(b2-b1);
+    // cout<<a2<<" "<<a1<<" "<<b2<<" "<<b1;
 
 
     return 0;
