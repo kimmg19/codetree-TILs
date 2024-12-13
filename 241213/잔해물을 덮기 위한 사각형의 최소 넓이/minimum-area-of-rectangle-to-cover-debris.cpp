@@ -19,7 +19,7 @@ int main() {
     for(int i=0;i<N;i++){
         for(int j=x1[i];j<x2[i];j++){
             for(int k=y1[i];k<y2[i];k++){
-                arr[i][j]=i+1;
+                arr[j][k]=i+1;
             }
         }
     }
@@ -32,9 +32,9 @@ int main() {
                 b1=j;
             }
             else if(arr[i][j]==1){
-                a2=i;
-                b2=j;
-            }
+                a2=i+1;
+                b2=j+1;
+            }            
         }
     }
     cout<<(a2-a1)*(b2-b1);
