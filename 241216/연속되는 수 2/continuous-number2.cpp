@@ -16,7 +16,7 @@ int main() {
             cnt++;
             if(cnt>=maxValue)maxValue=cnt;
         }
-        else cnt=0;
+        else cnt=1;
 
         
     }
