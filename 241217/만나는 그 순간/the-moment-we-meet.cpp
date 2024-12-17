@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 #define MAX 1000
 #define OFFSET 1000
@@ -39,12 +40,13 @@ int main() {
         cin>>d>>t;
         Move(B,d,t,b_pnt);
     }
-    // for(int i=0;i<10;i++){
+    // for(int i=0;i<20;i++){
     //     cout<<A[i]<<" "<<B[i]<<endl;    }
-    for(int i=1;i<MAX*OFFSET;i++){
+    int cnt=max(a_pnt,b_pnt);
+    for(int i=1;i<cnt;i++){
         if(A[i]==B[i]){
-        cout<<i;
-        return 0;
+        cout<<i<<endl;
+        
         }
     }
     cout<<-1;
