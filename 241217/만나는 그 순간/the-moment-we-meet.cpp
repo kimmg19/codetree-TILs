@@ -43,10 +43,12 @@ int main() {
     // for(int i=0;i<20;i++){
     //     cout<<A[i]<<" "<<B[i]<<endl;    }
     int cnt=max(a_pnt,b_pnt);
+    bool isExist;
     for(int i=1;i<cnt;i++){
+        if(isExist)return 0;
         if(A[i]==B[i]){
-        cout<<i<<endl;
-        
+            cout<<i;
+            isExist=true;
         }
     }
     cout<<-1;
