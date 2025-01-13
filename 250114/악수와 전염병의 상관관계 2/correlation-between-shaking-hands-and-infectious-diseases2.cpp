@@ -36,14 +36,16 @@ void Shaking(){
         if(shakeInfo[i].x==0)continue;  
 
         if(developer[shakeInfo[i].x-1].isInfection && developer[shakeInfo[i].x-1].shakeAmount>0){
+           
+            if(developer[shakeInfo[i].y-1].isInfection)  developer[shakeInfo[i].y-1].shakeAmount--;
             developer[shakeInfo[i].y-1].isInfection=true;
             developer[shakeInfo[i].x-1].shakeAmount--;
         }
-        if(developer[shakeInfo[i].y-1].isInfection && developer[shakeInfo[i].y-1].shakeAmount>0){
+        else if(developer[shakeInfo[i].y-1].isInfection && developer[shakeInfo[i].y-1].shakeAmount>0){
             developer[shakeInfo[i].x-1].isInfection=true;
             developer[shakeInfo[i].y-1].shakeAmount--;
         }
-        
+        else continue;
 
         // if(developer[shakeInfo[i].x-1].isInfection || developer[shakeInfo[i].y-1].isInfection){
         //     if(developer[shakeInfo[i].x-1].shakeAmount==0 || developer[shakeInfo[i].y-1].shakeAmount==0)continue;
@@ -65,7 +67,7 @@ int main() {
             developer[i]=Developer(K);
     }
 
-    developer[P-1].isInfection=true;
+    developer[P].isInfection=true;
 
     for(int i=0;i<T;i++){
         int t,x,y;
