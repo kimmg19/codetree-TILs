@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#define MAX 50000
+#define MAX 1000000
 
 int nPoint;//배열 A의 시간
 int mPoint;//배열 B의 시간
@@ -10,7 +10,7 @@ void MovePoint(int arr[],int t,char d,int &point){
         {
             for(int i=0;i<t;i++){
                 if(point==0)arr[point++]=-1;
-                else arr[point++]=arr[point-1]-1;
+                else arr[point++]=arr[point-1]-1;                
             }
         }
         else if(d=='R')
@@ -47,14 +47,14 @@ int main() {
             B[i]=B[mPoint-1];
         }
     }
-    else{
+    else if(nPoint<mPoint){
             for(int i=nPoint;i<mPoint;i++){
             A[i]=A[nPoint-1];
         }
     } 
       
     int currentTime=max(nPoint,mPoint);
-    for(int i=2;i<currentTime;i++){
+    for(int i=1;i<currentTime;i++){
         if(A[i]==B[i]){
             if(A[i-1]!=B[i-1])
                 cnt++;
