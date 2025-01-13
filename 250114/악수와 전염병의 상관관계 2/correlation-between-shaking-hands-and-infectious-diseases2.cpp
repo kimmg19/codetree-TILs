@@ -30,17 +30,28 @@ class ShakeInfo{
 
 Developer developer[NMAX]={};
 ShakeInfo shakeInfo[TMAX]={};
-
+//악수 횟수가 남아있는지. 
 void Shaking(){
     for(int i=0;i<TMAX;i++){
-        if(shakeInfo[i].x==0)continue;
-        if(developer[shakeInfo[i].x-1].shakeAmount==0 || developer[shakeInfo[i].y-1].shakeAmount==0)continue;
-        if(developer[shakeInfo[i].x-1].isInfection || developer[shakeInfo[i].y-1].isInfection){
-            developer[shakeInfo[i].x-1].isInfection=true;
+        if(shakeInfo[i].x==0)continue;  
+
+        if(developer[shakeInfo[i].x-1].isInfection && developer[shakeInfo[i].x-1].shakeAmount>0){
             developer[shakeInfo[i].y-1].isInfection=true;
             developer[shakeInfo[i].x-1].shakeAmount--;
+        }
+        else if(developer[shakeInfo[i].y-1].isInfection && developer[shakeInfo[i].y-1].shakeAmount>0){
+            developer[shakeInfo[i].x-1].isInfection=true;
             developer[shakeInfo[i].y-1].shakeAmount--;
-        }        
+        }
+        else continue;
+
+        // if(developer[shakeInfo[i].x-1].isInfection || developer[shakeInfo[i].y-1].isInfection){
+        //     if(developer[shakeInfo[i].x-1].shakeAmount==0 || developer[shakeInfo[i].y-1].shakeAmount==0)continue;
+        //      developer[shakeInfo[i].x-1].isInfection=true;
+        //      developer[shakeInfo[i].y-1].isInfection=true;
+        //      developer[shakeInfo[i].x-1].shakeAmount--;
+        //      developer[shakeInfo[i].y-1].shakeAmount--;
+        // }        
     }
 }
 
@@ -54,7 +65,7 @@ int main() {
             developer[i]=Developer(K);
     }
 
-    developer[P].isInfection=true;
+    developer[P-1].isInfection=true;
 
     for(int i=0;i<T;i++){
         int t,x,y;
