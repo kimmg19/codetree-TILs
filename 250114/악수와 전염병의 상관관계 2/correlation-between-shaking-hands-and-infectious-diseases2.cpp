@@ -39,7 +39,7 @@ void Shaking(){
             developer[shakeInfo[i].y-1].isInfection=true;
             developer[shakeInfo[i].x-1].shakeAmount--;
         }
-        else if(developer[shakeInfo[i].y-1].isInfection && developer[shakeInfo[i].y-1].shakeAmount>0){
+        if(developer[shakeInfo[i].y-1].isInfection && developer[shakeInfo[i].y-1].shakeAmount>0){
             developer[shakeInfo[i].x-1].isInfection=true;
             developer[shakeInfo[i].y-1].shakeAmount--;
         }
