@@ -47,11 +47,10 @@ int main() {
             B[i]=B[mPoint-1];
         }
     }
-    else if(mPoint>nPoint){
+    else{
             for(int i=nPoint;i<mPoint;i++){
             A[i]=A[nPoint-1];
         }
-
     } 
       
     int currentTime=max(nPoint,mPoint);
