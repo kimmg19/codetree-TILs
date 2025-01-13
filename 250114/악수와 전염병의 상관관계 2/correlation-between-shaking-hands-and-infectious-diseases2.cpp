@@ -35,26 +35,26 @@ void Shaking(){
     for(int i=0;i<TMAX;i++){
         if(shakeInfo[i].x==0)continue;  
 
-        // if(developer[shakeInfo[i].x-1].isInfection && developer[shakeInfo[i].x-1].shakeAmount>0){          
-        //     if(developer[shakeInfo[i].y-1].isInfection) developer[shakeInfo[i].y-1].shakeAmount--;
-        //     developer[shakeInfo[i].y-1].isInfection=true;
-        //     developer[shakeInfo[i].x-1].shakeAmount--;
-        // }
-        // else if(developer[shakeInfo[i].y-1].isInfection && developer[shakeInfo[i].y-1].shakeAmount>0){            
-        //     if(developer[shakeInfo[i].x-1].isInfection) developer[shakeInfo[i].x-1].shakeAmount--;
-        //     developer[shakeInfo[i].x-1].isInfection=true;
-        //     developer[shakeInfo[i].y-1].shakeAmount--;
-        //     cout<<" "<<developer[shakeInfo[i].y-1].shakeAmount<<endl;
-        // }
-        // else continue;
+        if(developer[shakeInfo[i].x-1].isInfection && developer[shakeInfo[i].x-1].shakeAmount>0){          
+            if(developer[shakeInfo[i].y-1].isInfection) developer[shakeInfo[i].y-1].shakeAmount--;
+            developer[shakeInfo[i].y-1].isInfection=true;
+            developer[shakeInfo[i].x-1].shakeAmount--;
+        }
+        else if(developer[shakeInfo[i].y-1].isInfection && developer[shakeInfo[i].y-1].shakeAmount>0){            
+            if(developer[shakeInfo[i].x-1].isInfection) developer[shakeInfo[i].x-1].shakeAmount--;
+            developer[shakeInfo[i].x-1].isInfection=true;
+            developer[shakeInfo[i].y-1].shakeAmount--;
+            // cout<<i<<" "<<developer[shakeInfo[i].y-1].shakeAmount<<endl;
+        }
+        else continue;
 
-         if(developer[shakeInfo[i].x-1].isInfection || developer[shakeInfo[i].y-1].isInfection){
-             if(developer[shakeInfo[i].x-1].shakeAmount==0 || developer[shakeInfo[i].y-1].shakeAmount==0)continue;
-              developer[shakeInfo[i].x-1].isInfection=true;
-              developer[shakeInfo[i].y-1].isInfection=true;
-              developer[shakeInfo[i].x-1].shakeAmount--;
-              developer[shakeInfo[i].y-1].shakeAmount--;
-         }        
+        //  if(developer[shakeInfo[i].x-1].isInfection || developer[shakeInfo[i].y-1].isInfection){
+        //      if(developer[shakeInfo[i].x-1].shakeAmount==0 || developer[shakeInfo[i].y-1].shakeAmount==0)continue;
+        //       developer[shakeInfo[i].x-1].isInfection=true;
+        //       developer[shakeInfo[i].y-1].isInfection=true;
+        //       developer[shakeInfo[i].x-1].shakeAmount--;
+        //       developer[shakeInfo[i].y-1].shakeAmount--;
+        //  }        
     }
 }
 
@@ -68,7 +68,7 @@ int main() {
             developer[i]=Developer(K);
     }
 
-    developer[P].isInfection=true;
+    developer[P-1].isInfection=true;
 
     for(int i=0;i<T;i++){
         int t,x,y;
