@@ -14,20 +14,19 @@ int main() {
     for(int i=0;i<n;i++){
         int distance;
         char vector;
+        int dir;
         cin>>vector>>distance;
         if(vector=='W'){
-            dx+=x[2]*distance;
-            dy+=y[2]*distance;
+            dir=2;
         }else if(vector=='S'){
-            dx+=x[3]*distance;
-            dy+=y[3]*distance;
+            dir=3;
         }else if(vector=='N'){
-            dx+=x[1]*distance;
-            dy+=y[1]*distance;
+            dir=1;
         }else if(vector=='E'){
-            dx+=x[0]*distance;
-            dy+=y[0]*distance;
+            dir=0;
         }else continue;
+        dx+=x[dir]*distance;
+        dy+=y[dir]*distance;
     }
         cout<<dx<<" "<<dy;
     return 0;
