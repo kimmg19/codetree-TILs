@@ -18,18 +18,20 @@ int main() {
             cin>>arr[i][j];
         }
     }
-    int cnt=0;
+    int cntt=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
+            int cnt=0;
             for(int dir=0;dir<4;dir++){        
                 int dx=i+x[dir];
                  int dy=j+y[dir];
                 if(IsRange(dx,dy,n) && arr[dx][dy]==1){
-                    cnt++;
+                    cnt++;                    
                 }
             }
+            if(cnt>=3)cntt++;
         }
     }
-    cout<<cnt;
+    cout<<cntt;
     return 0;
 }
