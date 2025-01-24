@@ -26,7 +26,7 @@ int main() {
     cin>>n>>t;
     cin>>r>>c>>d;
 
-    int dx[4]={1,0,-1,0};
+    int dx[4]={-1,0,1,0};
     int dy[4]={0,1,0,-1};
 
     cur_dir=Direction(d);
