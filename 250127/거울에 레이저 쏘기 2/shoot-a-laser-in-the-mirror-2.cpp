@@ -50,12 +50,21 @@ int main() {
     int cnt=0;
     while(true){
         
-        
-        if(mirrorRoom[x][y]=='/'){
-            dir_num=(dir_num+1)%4;
-        }else if(mirrorRoom[x][y]=='\\'){
-            dir_num=(dir_num+3)%4;
+        cnt++;
+        if(dir_num%2==0){
+            if(mirrorRoom[x][y]=='/'){
+                dir_num=(dir_num+1)%4;
+            }else if(mirrorRoom[x][y]=='\\'){
+                dir_num=(dir_num+3)%4;
+            }
+        }else{
+            if(mirrorRoom[x][y]=='/'){
+                dir_num=(dir_num+3)%4;
+            }else if(mirrorRoom[x][y]=='\\'){
+                dir_num=(dir_num+1)%4;
+            }
         }
+        
         int nx=x+dx[dir_num];
         int ny=y+dy[dir_num];
         
@@ -64,7 +73,7 @@ int main() {
         }else{
             x=x+dx[dir_num];
             y=y+dy[dir_num];
-            cnt++;
+            
         }
 
     }
