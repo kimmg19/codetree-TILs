@@ -21,9 +21,13 @@ void EnterPoint(int dir_num,int k){
         y=n-1;
     }else if(dir_num==2){
         x=n-1;
-        y=n-(k)/n;
+        if(n%2==1)
+            y=n-((k+1)/n);
+        else
+            y=n-((k+1)%n);
+
     }else{
-        x=n-(k)/n;
+        x=n-((k+1)%n);
         y=0;
     }
 }
@@ -47,6 +51,7 @@ int main() {
     cin>>k;
     dir_num=Direction(k-1);
     EnterPoint(dir_num,k-1);
+    // cout<<dir_num<<x<<y<<endl;
     int cnt=0;
     while(true){
         
