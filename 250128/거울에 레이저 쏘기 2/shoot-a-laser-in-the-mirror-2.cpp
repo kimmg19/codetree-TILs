@@ -20,14 +20,11 @@ void EnterPoint(int dir_num,int k){
         x=k%n;
         y=n-1;
     }else if(dir_num==2){
-        x=n-1;
-        if(n%2==1)
-            y=n-((k+1)/n);
-        else
-            y=n-((k+1)%n);
+        x=n-1;       
+        y=n-(k+1-2*n);
 
     }else{
-        x=n-((k+1)%n);
+        x=n-(k+1-3*n);
         y=0;
     }
 }
