@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-#define MAX 18
+#define MAX 20
 int main() {
     // Please write your code here.
     int n;
