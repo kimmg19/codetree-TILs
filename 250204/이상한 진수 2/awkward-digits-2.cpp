@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
+#include <cstdlib>
 using namespace std;
 
 int main() {
@@ -12,16 +14,19 @@ int main() {
         arr[i]=str[i]-'0';
     }
     
-    for(int i=0;i<n;i++){
-        if(arr[i]==0){
-            arr[i]=1;
-            break;
-        }
-    }
     int maxNum=0;
     for(int i=0;i<n;i++){
-        maxNum=maxNum*2+arr[i];
+        int num=0;
+        arr[i]=abs(arr[i]-1);
+        
+        for(int j=0;j<n;j++){
+            num=num*2+arr[j];
+        }
+        maxNum=max(maxNum,num);
+        arr[i]=abs(arr[i]-1);
     }
+    
+    
     cout<<maxNum;
     return 0;
 }
