@@ -15,7 +15,7 @@ int main() {
         hihi[num]=chr;
         maxPoint=max(maxPoint,num);
     }
-    cout<<maxPoint<<endl;
+    
     int maxSum=0;
     for(int i=0;i<maxPoint-k;i++){
         int sum=0;
