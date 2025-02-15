@@ -17,18 +17,15 @@ int main() {
     }
     
     int maxSum=0;
-    for(int i=0;i<maxPoint-k;i++){
+    for(int i=0;i<maxPoint;i++){
         int sum=0;
         for(int j=i;j<=i+k;j++){
-            if(hihi[j]=='G'){
-                
+            if(hihi[j]=='G'){                
                 sum+=1;
-            }else if(hihi[j]=='H'){
-                
+            }else if(hihi[j]=='H'){                
                 sum+=2;
-            }
-        }
-        
+            }else continue;
+        }        
         maxSum=max(sum,maxSum);
     }
     cout<<maxSum;
