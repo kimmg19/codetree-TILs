@@ -14,10 +14,12 @@ int main() {
     for(int i=0;i<n;i++){
         for(int j=i;j<n;j++){
             int sum=0;
-            for(int k=i;k<=j;k++){
+            for(int k=i;k<=j;k++){            
                 sum+=arr[k];
                 if(k==j){
-                    int child=sum/(j+1);
+                    float child=(float)sum/(j-i+1);
+                    // cout<<i<<" "<<j<<" ";
+                    // cout<<child<<" "<<sum<<" "<<j-i+1<<endl;
                     for(int h=i;h<=j;h++){
                         if(arr[h]==child){
                             cnt++;
