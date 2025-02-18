@@ -19,7 +19,7 @@ int main() {
     for(int i=0;i<6;i++){
         cin>>arr[i];
     }
-    int sss=100000;
+    int sss=10000000;
     for(int i=0;i<6;i++){
         for(int j=i+1;j<6;j++){
             for(int k=j+1;k<6;k++){
