@@ -13,15 +13,15 @@ int Diff(int i, int j, int k, int l) {
     int sum1 = arr[i] + arr[j];
 	int sum2 = arr[k] + arr[l];
     int sum3 = total_sum - sum1 - sum2;
-
+    if(sum1==sum2 || sum2==sum3 || sum1==sum3){
+        return 1000;
+    }
 	int maxteam=max(sum1,sum2);
     maxteam=max(maxteam,sum3);
     int minmteam=min(sum1,sum2);
     minmteam=min(minmteam,sum3);
     int ret=maxteam-minmteam;
-    if(ret==0){
-        return 1000;
-    }
+    
     
 	
     return ret;
