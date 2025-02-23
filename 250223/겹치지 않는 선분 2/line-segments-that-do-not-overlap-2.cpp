@@ -4,9 +4,11 @@ using namespace std;
 int n;
 bool IsCross(int i){
     for(int j=0;j<n;j++){
-        if((x1[i]>x1[j]&&x2[i]<x2[j]) ||( x1[i]<x1[j]&&x2[i]>x2[j]))return false;
+        if(i==j)continue;
+        if((x1[i]>x1[j]&&x2[i]<x2[j]) ||(x1[i]<x1[j]&&x2[i]>x2[j])
+        ||(x1[i]<x1[j]&&x2[i]>x2[j]))return true;
     }
-    return true;
+    return false;
 
 }
 int main() {
