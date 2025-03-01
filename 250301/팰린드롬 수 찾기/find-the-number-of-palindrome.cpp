@@ -10,15 +10,10 @@ int main() {
     int cnt=0;
     for(int i=x;i<=y;i++){
         string str=to_string(i);
-        int length=str.length();
-        string str1=str.substr(0,length/2);
-        string str2;
-        if(length%2==0)
-            str2=str.substr((length/2));
-        else 
-            str2=str.substr((length/2)+1);
+        string str1=str;
+
         reverse(str1.begin(),str1.end());
-        if(str1==str2)cnt++;
+        if(str==str1)cnt++;
     }
     cout<<cnt;
     return 0;
