@@ -15,8 +15,9 @@ int main() {
     for(int i=0;i<n;i++){//2배하는 수
         arr[i]*=2;
         int remain[100]={};   
-        int num=0;     
             for(int j=0;j<n;j++){  //제외할 수
+            int num=0;     
+
                 for(int k=0;k<n;k++){//2배와 제외한 수를 뺴고 문제 실행.
                     if(j==k)continue;
                     remain[num++]=arr[k];
