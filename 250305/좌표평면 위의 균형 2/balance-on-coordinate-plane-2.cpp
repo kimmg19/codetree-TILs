@@ -24,8 +24,8 @@ int main() {
     for(int i=0;i<n;i++){
         cin>>x[i]>>y[i];
     }
-    for(int i=0;i<n;i+=2){
-        for(int j=0;j<n;j+=2){
+    for(int i=0;i<=100;i+=2){
+        for(int j=0;j<=100;j+=2){
             mincnt=min(mincnt,fuck(i,j));
         }
     }
