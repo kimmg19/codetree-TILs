@@ -11,22 +11,51 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> x[i] >> y[i];
     }
-    
+    int ans=0;
     int cnt=0;
     for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
-            for(int k=j+1;k<n;k++){
+        for(int j=0;j<n;j++){
+            for(int k=0;k<n;k++){
+                bool success=true;
                 for(int h=0;h<n;h++){
-                    if(x[h]==i || y[h]==i || x[h]==k)cnt++;
+                    
+                    if(x[h]==i || x[h]==j || x[j]==k)
+                        continue;
+                    success=false;
                 }
-                if(cnt>=n){
-                    cout<<1;
-                    return 0;
+                if(success)
+                    ans = 1;
+                for(int h=0;h<n;h++){
+                    bool success=true;
+                    if(y[h]==i || x[h]==j || x[j]==k)
+                        continue;
+                    success=false;
                 }
+                if(success)
+                    ans = 1;
+                for(int h=0;h<n;h++){
+                    bool success=true;
+                    if(y[h]==i || y[h]==j || x[j]==k)
+                        continue;
+                    success=false;
+                }
+                if(success)
+                    ans = 1;
+                for(int h=0;h<n;h++){
+                    bool success=true;
+                    if(y[h]==i || y[h]==j || y[j]==k)
+                        continue;
+                    success=false;
+                }
+if(success)
+                    ans = 1;
+
+
+                
             }
         }
     }
     
-    cout<<0;
+    cout<<ans;
     return 0;
 }
