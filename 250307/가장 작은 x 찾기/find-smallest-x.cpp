@@ -22,7 +22,7 @@ cin>>n;
         cin>>a[i]>>b[i];
     }
     int minnum=10000;
-    for(int x=1;x<10;x++){
+    for(int x=1;x<=5000;x++){
         if(Check(x)){
             minnum=min(minnum,x);
         }
