@@ -3,13 +3,12 @@ using namespace std;
 int arr[1000];
 int n;
 
-bool Check(int arr2[]){
-    for(int k=0;k<n-1;k++){
-            if(arr2[k]==arr2[k+1] || arr2[k]==0){
-                return false;
-            }
-        }
-        return true;
+bool Check(int arr[]){
+    if(arr[0]==0)return false;
+    for(int k=1;k<n;k++){        
+        if(arr[k]==0 || arr[k]==arr[k+1] || arr[k]>n)return false;        
+    }
+    return true;
 }
 
 int main() {
