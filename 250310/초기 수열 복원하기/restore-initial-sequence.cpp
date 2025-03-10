@@ -5,7 +5,7 @@ int n;
 
 bool Check(int arr2[]){
     for(int k=0;k<n-1;k++){
-            if(arr2[k]==arr2[k+1]){
+            if(arr2[k]==arr2[k+1] || arr2[k]==0){
                 return false;
             }
         }
